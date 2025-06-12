@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: louis;
+  font-family: george;
   src: url(https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/Louis%20George%20Cafe.ttf?v=1748470239050);
 }
 
@@ -171,7 +171,7 @@ body.lb-disable-scrolling {
   font-size: 15px;
   font-weight: bold;
   color:#efe9dc;
-  font-family:lous,sans-serif;
+  font-family:george,sans-serif;
   line-height: 1em;
 }
 
