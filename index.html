@@ -1,0 +1,102 @@
+<!-- Final Project
+Requirements
+[  ] Customized HTML Page #1
+[  ] Customized HTML Page #2 
+[  ] Customized HTML Page #3
+[  ] Customized HTML Page #4
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Google Font
+[ no ] Feature 2 - Upload a Font
+[ no ] Feature 3 - Include jQuery
+[ no ] Feature 4 - Embed Code from Spotify/Google Docs/YouTube
+[ no ] Feature 5 - Customized HTML Page #5
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Skyler Hennion</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+
+      #aboutmecontent {
+        margin-top: 60px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+
+    <div class="navbarcontainer">
+      <ul class="nav">
+        <li>
+          <a
+            id="skyler"
+            style="font-family: littlebird; font-size: 20px; padding-top: 8px"
+            >Skyler Hennion</a
+          >
+        </li>
+        <li style="float: right"><a href="resume.html">Resume</a></li>
+        <li style="float: right"><a href="garments.html">Garments</a></li>
+        <li style="float: right"><a href="art.html">Art & Design</a></li>
+        <li style="float: right">
+          <a class="active" href="index.html">About</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+
+    <div
+      id="aboutmecontent"
+      style="margin: auto; width: 1000px; display: flex; align-items: flex-start"
+    >
+    <img
+        src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/74386f4fbe5a9e71094db8640fe11e8c.jpeg?v=1747969421283"
+        width="440px"
+        style="margin-top: 40px; margin-right: 40px"
+      />
+      <div>
+        <h1>SKYLER HENNION</h1>
+        <p>
+          Skyler Hennion is a fifth-generation New Yorker majoring in Technical
+          Theater at the Fiorello H. LaGuardia High School of Music & Art and
+          Performing Arts. Set to attend Vassar College in August 2025, she
+          intends to pursue Sociolinguistics and Medieval & Renaissance Studies, as well as continuing her interests in theater and the creative arts. 
+          
+          <br /><br />
+          From an early age, Skyler was introduced to the world of technical
+          theater by her mom who worked in the field as a scenic
+          artist. By third grade, she began her own career in technical theater
+          for her elementary school, and continued through middle and high
+          school. To date she has worked on fourteen productions. In her four
+          years at Laguardia, she  concentrated in the building, patterning, designing, and fitting of costumes and garments. She enjoys working as a dresser during performances because of the interaction with the actors and the in-the-moment demands of live theater.
+          <br /><br />
+          Outside of school, Skyler works in a variety of mediums, including painting, drawing, crafting, embroidery, and digital art. She looks forward to expanding her arsonal of creative skills.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 27) {
+            $(".navbarcontainer").addClass("scrolled");
+          } else {
+            $(".navbarcontainer").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

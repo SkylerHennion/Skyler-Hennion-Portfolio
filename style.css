@@ -1,0 +1,118 @@
+/* Styling Only Related To ALL Pages */
+
+@font-face {
+  font-family: littlebird;
+  src: url(https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/LittleBird.ttf?v=1747843366784);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/open-sans.regular.ttf?v=1748035428633);
+}
+
+@font-face {
+  font-family: cocogothic;
+  src: url(https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/CocoGothic_trial.ttf?v=1747880556970);
+}
+
+
+
+body {
+  padding-top: 30px;
+  margin: auto;
+  background-color: #efe9dc;
+  background-image: url(https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/output-onlinepngtools.png?v=1748573121585);
+
+}
+
+h1 {
+  color: #210124;
+  font-family: littlebird, sans-serif;
+  text-align: center;
+  margin: 50px;
+  font-size: 50px;
+  text-shadow: 0px 0px 30px rgb(0, 124, 123);
+}
+
+p {
+  color: #750d37;
+  font-family: opensans, sans-serif;
+}
+
+/* ⬆⬆⬆⬆ Nav Bar Styling 
+~~~~~ Taken From: 
+https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+.navbarcontainer {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+ul.nav {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1000;
+  padding-top: 20px;
+  position: sticky;
+  top: -5;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.navbarcontainer.scrolled {
+  background-image: linear-gradient(rgb(33, 1, 36, 0.5), rgb(0, 0, 0, 0));
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li a {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  color: #210124;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-family: cocogothic, sans-serif;
+}
+
+#skyler:hover {
+  color: rgb(33, 1, 36);
+}
+
+ul.nav li a:hover:not(.active) {
+  color: #750d37;
+}
+
+ul.nav .active {
+  color: #2e8c8b;
+}
+
+.pagecontent {
+  display: flex;
+  align-items: start;
+  width: 90%;
+  margin: Auto;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pieceandcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 400px;
+  padding: 0px 10px;
+  margin-bottom: 25px;
+}
+
+/*https://www.youtube.com/watch?v=IPVQeVlw2_E*/
